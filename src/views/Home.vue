@@ -23,8 +23,8 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-white state"><router-link :to="{name: 'all.state'}">
-          State Breakdown</router-link></button>
+        <button class="btn btn-white state"><router-link :to="{name: 'all.state'}"
+             class="text-dark">State Breakdown</router-link></button>
       </div>
     </section>
     <div class="down"></div>
