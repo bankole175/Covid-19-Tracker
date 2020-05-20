@@ -1,0 +1,17 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+
+
+.letter {
+  letter-spacing: 0.01rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.card.card-height-full {
+  height: calc(100% - 1.5rem);
+}

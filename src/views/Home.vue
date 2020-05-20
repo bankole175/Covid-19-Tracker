@@ -23,6 +23,8 @@
             </div>
           </div>
         </div>
+        <button class="btn btn-white state"><router-link :to="{name: 'all.state'}">
+          State Breakdown</router-link></button>
       </div>
     </section>
     <div class="down"></div>
@@ -30,7 +32,6 @@
 </template>
 
 <script>
-// import { mapState } from 'vuex';
 import Axios from 'axios';
 
 export default {
@@ -74,7 +75,7 @@ export default {
     position: relative;
     background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
     height: 50vh;
-    animation: wave 2s infinite ease-in-out alternate
+    animation: wave 2.5s infinite ease-in-out alternate;
   }
   @keyframes wave {
     0%{
@@ -91,5 +92,25 @@ export default {
     background-size: cover;
     width: 100%;
     height: 600px;
+  }
+  .state {
+    &:hover {
+      border-color:deeppink;
+      color:hotpink;
+
+      animation: shakeThatBooty 0.8s linear 1;
+    }
+  }
+
+  @keyframes shakeThatBooty {
+    33% {
+      transform: rotateZ(100deg);
+    }
+    67% {
+      transform: rotateZ(-100deg);
+    }
+    100% {
+      transform: rotateZ(100deg);
+    }
   }
 </style>
