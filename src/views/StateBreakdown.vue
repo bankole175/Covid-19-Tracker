@@ -9,7 +9,7 @@
       </div>
       <div class="card">
         <div class="card-table">
-          <table class="table table-sm table-responsive table-nowrap">
+          <table class="table table-sm table-responsive-sm table-nowrap">
             <thead>
             <tr>
               <th scope="col">State</th>
